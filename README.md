@@ -6,8 +6,6 @@ This is the implementation of the paper [One-Teacher and Multiple-Student Knowle
 To run our code, please install all the dependency packages by using the following command:
 ```
 pip install -r requirements.txt
-pip install torch==1.8.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
-pip install torchtext==0.9.0
 ```
 **Note**: Different versions of server graphics cards and dependency packages may lead to different results from the paper. However, the trend should still hold if you tune hyper-parameters no matter what versions you use.
 
