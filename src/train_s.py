@@ -83,7 +83,7 @@ def evaluate(model, iter1, iter2, iter3):
 def get_teacher_outputs(args):
     teacher_outputs = []
     idx, lines = 0, []
-    with open(os.path.join(args.data_dir, args.testset_dir[:-3] + 'txt'), 'r') as fr:         
+    with open(os.path.join(args.data_dir, args.testset_dir[:-3] + 'csv'), 'r') as fr:         
         for line in fr.readlines():               
             if idx == args.batch_size:
                 teacher_outputs.append(torch.tensor(lines).cuda())
